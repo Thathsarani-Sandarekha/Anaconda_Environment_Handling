@@ -15,6 +15,14 @@ conda install -c anaconda ipykernel
 ## Add the new virtual environment to Jupyter
 python -m ipykernel install --user --name='environment_name'
 
+##If you get the following error
+##ImportError: cannot import name 'has_suggestion' from 'prompt_toolkit.filters' (/Users/username/opt/anaconda3/envs/'environment_name'/lib/python3.10/site-packages/prompt_toolkit/filters/__init__.py)
+## install the ipython and again Add the new virtual environment to Jupyter
+pip install ipython
+
+## If it successfully added you can see the following massage
+## Installed kernelspec 'environment_name' in /Users/username/Library/Jupyter/kernels/'environment_name'
+
 ## To list existing Jupyter virtual environments
 jupyter kernelspec list
 
